@@ -7,7 +7,7 @@ url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
 
 def get_temperature():
     weather_api_key = '46a79520f7d3d770c0900eb851944070'
-    city = 'Delhi'
+    city = 'Delhi/NCR'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_api_key}'
     response = requests.get(url)
     data = json.loads(response.text)
